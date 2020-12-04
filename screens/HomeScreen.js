@@ -24,8 +24,14 @@ const dataArray = [
 function HomeHomeScreen() {
  return (
    <View style={styles.container}>
-     
-     <Text style={styles.titleText}>Running Shots</Text>
+      <Text style={styles.titleText}>
+        <Image
+           source={{
+             uri:
+               "https://scontent.fsin5-1.fna.fbcdn.net/v/t1.0-9/1238308_582628878452055_1880789603_n.png?_nc_cat=101&ccb=2&_nc_sid=7aed08&_nc_ohc=74gJ8S-od6QAX_uqZVd&_nc_ht=scontent.fsin5-1.fna&oh=5f918ac52c630a6db46ba71e8940ee29&oe=5FF0901F",
+           }}
+           style={{ height: 50, width: 50}}
+         />  Running Shots</Text>
      <Card style={styles.card}>
        <CardItem>
          <Body>
