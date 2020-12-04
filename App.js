@@ -21,11 +21,11 @@ export default function App() {
             let iconName;
 
             if (route.name === 'Home') {
-              iconName = focused
-                ? 'ios-information-circle'
-                : 'ios-information-circle-outline';
+              iconName = focused ? 'ios-home': 'ios-home';
             } else if (route.name === 'Events') {
               iconName = focused ? 'ios-list-box' : 'ios-list';
+            } else if (route.name === 'Contact') {
+              iconName = focused ? 'ios-mail-open' : 'ios-mail';
             }
 
             // You can return any component that you like here!
