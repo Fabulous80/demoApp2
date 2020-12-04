@@ -1,5 +1,7 @@
 import * as React from "react";
 import { View } from "react-native";
+import { createStackNavigator } from "@react-navigation/stack";
+
 import {
   Container,
   Content,
@@ -15,26 +17,29 @@ import {
 
 const contactsData = [
   {
-    name: "Charlie McCharles",
-    title: "CEO",
-    company: "Baskets International LLC",
+    name: "Marcus Lim",
+    title: "Founder",
+    company: "Running Shots",
     pic: "https://randomuser.me/portraits/men/1.jpg",
   },
   {
-    name: "Desiree Dee",
-    title: "CMO",
-    company: "Busket Inc",
-    pic: "https://randomuser.me/portraits/women/1.jpg",
+    name: "Tekko Koh",
+    title: "Co-Founder",
+    company: "Running Shots",
+    pic: "https://randomuser.me/portraits/men/4.jpg",
   },
   {
-    name: "Adam ellis",
-    title: "CTO",
-    company: "Baskets of Biskits",
-    pic: "https://randomuser.me/portraits/men/2.jpg",
+    name: "Sotong Mah",
+    title: "The Trigger Happy Man",
+    company: "Running Shots",
+    pic: "https://randomuser.me/portraits/men/3.jpg",
   },
+  
 ];
 
-export default function ContactScreen() {
+
+
+ function ContactContactScreen() {
   return (
     <Container>
       <Content>
@@ -58,4 +63,15 @@ export default function ContactScreen() {
       </Content>
     </Container>
   );
+
+        }
+const Stack = createStackNavigator();
+
+export default function OurTeamScreen() {
+ return (
+   <Stack.Navigator>
+     <Stack.Screen name="Our Team" component={ContactContactScreen} />
+   </Stack.Navigator>
+ );
+
 }

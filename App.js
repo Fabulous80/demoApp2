@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from "./screens/HomeScreen";
 import EventsScreen from "./screens/EventsScreen";
-import ContactScreen from "./screens/ContactScreen";
+import OurTeamScreen from "./screens/OurTeamScreen";
 import {fontAwesome} from '@expo/vector-icons';
 import Ionicons from "react-native-vector-icons/Ionicons";
 
@@ -24,8 +24,8 @@ export default function App() {
               iconName = focused ? 'ios-home': 'ios-home';
             } else if (route.name === 'Events') {
               iconName = focused ? 'ios-list-box' : 'ios-list';
-            } else if (route.name === 'Contact') {
-              iconName = focused ? 'ios-mail-open' : 'ios-mail';
+            } else if (route.name === 'OurTeam') {
+              iconName = focused ? 'ios-reverse-camera' : 'ios-camera';
             }
 
             // You can return any component that you like here!
@@ -39,7 +39,7 @@ export default function App() {
       >
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Events" component={EventsScreen} />
-        <Tab.Screen name="Contact" component={ContactScreen} />
+        <Tab.Screen name="OurTeam" component={OurTeamScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
