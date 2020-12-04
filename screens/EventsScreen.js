@@ -33,8 +33,8 @@ function EventsThirdScreen({ navigation }) {
       <Text>Events Third Page!</Text>
       <Button
        onPress={() => navigation.popToTop()}
-       title="Back to top"
-     ></Button>
+       title="Back to top">
+       </Button>
 
     </View>
   );
